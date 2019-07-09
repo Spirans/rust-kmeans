@@ -123,7 +123,7 @@ mod tests {
        ];
 
         let b = observations.clone();
-        let centroids = train(observations, 2, 50);
+        let centroids = train(&observations, 2, 50);
         let c = centroids.clone();
         if let Some(c) = centroids {
             for centroid in c {
